@@ -1,0 +1,34 @@
+#include <DUnitX.TestFramework.hpp>
+#include <stdio.h>
+#include "Unit3.h"
+
+#pragma option --xrtti
+
+TForm1 *app;
+//---------------------------------------------------------------------------
+void __fastcall TMyTestObject::SetUp()
+{
+	//Toujours exécuté avant le test
+}
+//---------------------------------------------------------------------------
+void __fastcall TMyTestObject::TearDown()
+{
+	//Toujours exécuté après le test
+}
+//---------------------------------------------------------------------------
+void __fastcall TMyTestObject::TestAjoutUtilisateur()
+{
+  // TODO
+  TForm app = new TForm1();
+  int res=1;
+  int resultat=0;
+  resultat=app->ajouterUtilisateur("test","testpass");
+  Dunitx::Testframework::Assert::IsTrue(res == resultat);
+}
+//---------------------------------------------------------------------------
+static void registerTests()
+{
+  TDUnitX::RegisterTestFixture(__classid(TMyTestObject));
+}
+//---------------------------------------------------------------------------
+#pragma startup registerTests 33

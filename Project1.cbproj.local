@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/07 12:11:14.000.744,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2016/04/07 12:11:14.000.719,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.dfm=P:\stagesi\Prog C++\Unit1.dfm</Transaction>
+    <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.cpp=P:\stagesi\Prog C++\Unit1.cpp</Transaction>
+    <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.h=P:\stagesi\Prog C++\Unit1.h</Transaction>
+    <Transaction>2016/04/07 13:51:34.000.762,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=P:\stagesi\Prog C++\Project1PCH1.h</Transaction>
+    <Transaction>2016/04/07 17:03:39.000.646,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit3.cpp</Transaction>
+    <Transaction>2016/04/07 17:03:56.000.164,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit3.cpp=P:\stagesi\Prog C++\Unit3.cpp</Transaction>
+    <Transaction>2016/04/07 17:03:56.000.164,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit3.h=P:\stagesi\Prog C++\Unit3.h</Transaction>
+    <Transaction>2016/04/07 17:03:59.000.842,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Project1.cbproj=P:\stagesi\Prog C++\Project1.cbproj</Transaction>
+    <Transaction>2016/04/08 09:31:50.000.956,P:\stagesi\Prog C++\Unit3.cpp=</Transaction>
+    <Transaction>2016/04/08 09:32:55.000.514,=P:\stagesi\Prog C++\Unit2.cpp</Transaction>
+    <Transaction>2016/04/11 14:37:48.000.071,P:\stagesi\Prog C++\Unit2.cpp=</Transaction>
+  </Transactions>
+</BorlandProject>

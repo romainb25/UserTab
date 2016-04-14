@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit3H
+#define Unit3H
+//---------------------------------------------------------------------------
+#include <DUnitX.TestFramework.hpp>
+#include <stdio.h>
+#include "Unit1.h"
+
+#pragma option --xrtti
+//---------------------------------------------------------------------------
+class __declspec(delphirtti) TMyTestObject : public TObject
+{
+public:
+  virtual void __fastcall SetUp();
+  virtual void __fastcall TearDown();
+
+__published:
+  void __fastcall TestAjoutUtilisateur();
+};
+//---------------------------------------------------------------------------
+#endif
