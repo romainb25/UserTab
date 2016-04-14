@@ -25,11 +25,19 @@ __published:	// Composants gérés par l'EDI
 	TLabel *LabelLogin;
 	TLabel *Label_Password;
 	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TEdit *EditPassword2;
+	TLabel *Label_Password2;
+	TLabel *Etat;
+	TEdit *EditEtat;
+	TButton *Reset;
 	void __fastcall AfficherClick(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall ResetClick(TObject *Sender);
 private:	// Déclarations utilisateur
 public:		// Déclarations utilisateur
-	void __fastcall ajouterUtilisateur(AnsiString,AnsiString);
+	void __fastcall ajouterUtilisateur(AnsiString,AnsiString,AnsiString);
 	void __fastcall getListeUtilisateurs();
 	__fastcall TForm1(TComponent* Owner);
 };

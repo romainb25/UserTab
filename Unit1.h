@@ -27,7 +27,6 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
-	TEdit *EditPassword2;
 	TLabel *Label_Password2;
 	TLabel *Etat;
 	TEdit *EditEtat;

@@ -153,20 +153,13 @@ object Form1: TForm1
     TabOrder = 4
     OnClick = Button1Click
   end
-  object EditPassword2: TEdit
-    Left = 152
-    Top = 208
-    Width = 193
-    Height = 21
-    TabOrder = 5
-  end
   object EditEtat: TEdit
     Left = 152
     Top = 304
     Width = 241
-    Height = 25
+    Height = 21
     Enabled = False
-    TabOrder = 6
+    TabOrder = 5
   end
   object Reset: TButton
     Left = 255
@@ -174,7 +167,7 @@ object Form1: TForm1
     Width = 90
     Height = 34
     Caption = 'Reset'
-    TabOrder = 7
+    TabOrder = 6
     OnClick = ResetClick
   end
   object ADOConnection1: TADOConnection

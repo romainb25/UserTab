@@ -100,11 +100,17 @@ object Form1: TForm1
     Caption = 'R'#233'p'#233'ter mot de passe'
   end
   object Etat: TLabel
-    Left = 88
-    Top = 312
-    Width = 30
+    Left = 105
+    Top = 307
+    Width = 32
     Height = 13
     Caption = 'Etat : '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Memo_Utilisateurs: TMemo
     Left = 520
@@ -139,21 +145,30 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 179
+    Left = 152
     Top = 248
-    Width = 121
+    Width = 89
     Height = 33
     Caption = 'Ajouter'
     TabOrder = 4
     OnClick = Button1Click
   end
-  object EditLogin2: TEdit
+  object EditEtat: TEdit
     Left = 152
-    Top = 208
-    Width = 193
+    Top = 304
+    Width = 241
     Height = 21
     Enabled = False
     TabOrder = 5
+  end
+  object Reset: TButton
+    Left = 255
+    Top = 248
+    Width = 90
+    Height = 34
+    Caption = 'Reset'
+    TabOrder = 6
+    OnClick = ResetClick
   end
   object ADOConnection1: TADOConnection
     Connected = True
