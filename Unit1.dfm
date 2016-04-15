@@ -1,10 +1,11 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'UserTab'
+  Caption = 'UserTab v0.3'
   ClientHeight = 403
   ClientWidth = 912
-  Color = clBtnFace
+  Color = clWhite
+  TransparentColorValue = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -169,6 +170,47 @@ object Form1: TForm1
     Caption = 'Reset'
     TabOrder = 6
     OnClick = ResetClick
+  end
+  object EditPassword2: TEdit
+    Left = 152
+    Top = 208
+    Width = 193
+    Height = 21
+    TabOrder = 7
+  end
+  object ColorBoxLogin: TColorBox
+    Left = 351
+    Top = 128
+    Width = 41
+    Height = 22
+    DefaultColorColor = clWhite
+    NoneColorColor = clWhite
+    Selected = clWhite
+    Color = clWhite
+    Enabled = False
+    TabOrder = 8
+  end
+  object ColorBoxPassword1: TColorBox
+    Left = 351
+    Top = 168
+    Width = 41
+    Height = 22
+    DefaultColorColor = clWhite
+    NoneColorColor = clWhite
+    Selected = clWhite
+    Enabled = False
+    TabOrder = 9
+  end
+  object ColorBoxPassword2: TColorBox
+    Left = 351
+    Top = 208
+    Width = 41
+    Height = 22
+    DefaultColorColor = clWhite
+    NoneColorColor = clWhite
+    Selected = clWhite
+    Enabled = False
+    TabOrder = 10
   end
   object ADOConnection1: TADOConnection
     Connected = True

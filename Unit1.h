@@ -9,6 +9,7 @@
 #include <Vcl.Forms.hpp>
 #include <Data.DB.hpp>
 #include <Data.Win.ADODB.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -31,6 +32,10 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Etat;
 	TEdit *EditEtat;
 	TButton *Reset;
+	TEdit *EditPassword2;
+	TColorBox *ColorBoxLogin;
+	TColorBox *ColorBoxPassword1;
+	TColorBox *ColorBoxPassword2;
 	void __fastcall AfficherClick(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ResetClick(TObject *Sender);
@@ -38,6 +43,9 @@ private:	// Déclarations utilisateur
 public:		// Déclarations utilisateur
 	void __fastcall ajouterUtilisateur(AnsiString,AnsiString,AnsiString);
 	void __fastcall getListeUtilisateurs();
+	int __fastcall VerifIdentifiant(AnsiString);
+	int __fastcall VerifPassword(AnsiString);
+	int __fastcall VerifPassword2(AnsiString);
 	__fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------

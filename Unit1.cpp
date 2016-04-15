@@ -27,6 +27,8 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 
 void __fastcall TForm1::ajouterUtilisateur(AnsiString ELogin, AnsiString EPassword, AnsiString EPassword2)
 {
+	int verifId,verifPass1,verifPass2;
+
    // ouverture base et table
    ADOConnection1->Open();
    ADOTable1->Open();
@@ -34,24 +36,77 @@ void __fastcall TForm1::ajouterUtilisateur(AnsiString ELogin, AnsiString EPasswo
    // on passe en mode insertion
    ADOTable1->Insert();
 
-   //on vérifie que les 2 mots de passe correspondent
-   if (EditPassword->Text==EditPassword2->Text) {
-       // on insère les 2 valeurs récupérées
-	   ADOTable1->FieldByName("login")->AsString = ELogin;
-	   ADOTable1->FieldByName("password")->AsString = EPassword;
+	verifId=VerifIdentifiant(ELogin);
+	verifPass1=VerifPassword(EPassword);
+	verifPass2=VerifPassword2(EPassword2);
 
-	   //on valide les modifications
-	   ADOTable1->Post();
+    if(verifId&&verifPass1&&verifPass2==1)
+	//on vérifie que les 2 mots de passe correspondent
+	if (EditPassword->Text==EditPassword2->Text){
+		// on insère le login récupéré
+		ADOTable1->FieldByName("login")->AsString = ELogin;
+		// on insère le mot de passe récupéré
+		ADOTable1->FieldByName("password")->AsString = EPassword;
 
-	   EditEtat->Text="Utilisateur ajouté!";
-   }
-   else{
-       EditEtat->Text="Les deux mots de passe ne correspondent pas!";
-   }
+		//on valide les modifications
+		ADOTable1->Post();
+
+		EditEtat->Text="Utilisateur ajouté!";
+	}
+	else{
+		ColorBoxPassword1->Selected=clRed;
+		ColorBoxPassword2->Selected=clRed;
+		EditEtat->Text="Les deux mots de passe ne correspondent pas!";
+	}
 
    // on ferme base et table
    ADOTable1->Close();
    ADOConnection1->Close();
+}
+
+//---------------------------------------------------------------------------
+
+int __fastcall TForm1::VerifIdentifiant(AnsiString ELogin)
+{
+	if(ELogin==""){
+		ColorBoxLogin->Selected=clRed;
+		EditEtat->Text="Vous n'avez pas renseigné d'identifiant!";
+		return 0;
+	}
+	else{
+		ColorBoxLogin->Selected=clGreen;
+		return 1;
+	}
+}
+
+//---------------------------------------------------------------------------
+
+int __fastcall TForm1::VerifPassword(AnsiString EPassword)
+{
+	if(EPassword==""){
+		ColorBoxPassword1->Selected=clRed;
+		EditEtat->Text="Vous n'avez pas renseigné de mot de passe!";
+		return 0;
+	}
+	else{
+		ColorBoxPassword1->Selected=clGreen;
+		return 1;
+	}
+}
+
+//---------------------------------------------------------------------------
+
+int __fastcall TForm1::VerifPassword2(AnsiString EPassword2)
+{
+	if(EPassword2==""){
+		ColorBoxPassword2->Selected=clRed;
+		EditEtat->Text="Vous n'avez pas renseigné de mot de passe!";
+		return 0;
+	}
+	else{
+		ColorBoxPassword2->Selected=clGreen;
+		return 1;
+	}
 }
 
 //---------------------------------------------------------------------------
