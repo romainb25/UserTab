@@ -1,0 +1,46 @@
+#include <DUnitX.TestFramework.hpp>
+#include <stdio.h>
+#include <vcl.h>
+
+#pragma option --xrtti
+
+#include "Unit1.h"
+
+class __declspec(delphirtti) TFormTest : public TObject
+{
+public:
+  virtual void __fastcall SetUp();
+  virtual void __fastcall TearDown();
+
+__published:
+  void __fastcall Test1();
+  void __fastcall Test2();
+};
+
+
+void __fastcall TFormTest::SetUp()
+{
+}
+
+void __fastcall TFormTest::TearDown()
+{
+}
+
+void __fastcall TFormTest::Test1()
+{
+  app = new TForm(Form1);
+  //Dunitx::Testframework::Assert::IsTrue(s == "Hello");
+}
+
+void __fastcall TFormTest::Test2()
+{
+  // TODO
+  String s("Hello");
+  Dunitx::Testframework::Assert::IsTrue(s == "Bonjour"); // This fails for illustrative purposes
+}
+
+static void registerTests()
+{
+  TDUnitX::RegisterTestFixture(__classid(TFormTest));
+}
+#pragma startup registerTests 33

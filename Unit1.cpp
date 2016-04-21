@@ -9,8 +9,7 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TForm1::TForm1(TComponent* Owner): TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
@@ -152,6 +151,9 @@ void __fastcall TForm1::ResetClick(TObject *Sender)
 	EditPassword->Text="";
 	EditPassword2->Text="";
 	EditEtat->Text="";
+	ColorBoxLogin->Selected=clWhite;
+	ColorBoxPassword1->Selected=clWhite;
+	ColorBoxPassword2->Selected=clWhite;
 }
 //---------------------------------------------------------------------------
 
