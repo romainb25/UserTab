@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/04/07 12:11:14.000.744,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
     <Transaction>2016/04/07 12:11:14.000.719,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2016/04/07 12:11:14.000.744,=C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
     <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.dfm=P:\stagesi\Prog C++\Unit1.dfm</Transaction>
     <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.cpp=P:\stagesi\Prog C++\Unit1.cpp</Transaction>
     <Transaction>2016/04/07 12:11:56.000.695,C:\Users\stageSI\Documents\Embarcadero\Studio\Projets\Unit1.h=P:\stagesi\Prog C++\Unit1.h</Transaction>
@@ -18,5 +18,7 @@
     <Transaction>2016/04/20 14:42:28.000.940,P:\stagesi\Prog C++\TFormTest.cpp=P:\stagesi\Prog C++\Unit2.cpp</Transaction>
     <Transaction>2016/04/20 14:42:28.000.940,P:\stagesi\Prog C++\TFormTest.h=P:\stagesi\Prog C++\Unit2.h</Transaction>
     <Transaction>2016/04/21 12:10:12.000.086,P:\stagesi\Prog\TFormTest.cpp=</Transaction>
+    <Transaction>2016/04/21 14:48:34.000.589,=P:\stagesi\Prog\TFormTest.cpp</Transaction>
+    <Transaction>2016/04/25 10:02:19.121,P:\stagesi\Prog\TFormTest.cpp=</Transaction>
   </Transactions>
 </BorlandProject>

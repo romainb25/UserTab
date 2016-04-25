@@ -41,12 +41,13 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall ResetClick(TObject *Sender);
 private:	// Déclarations utilisateur
 public:		// Déclarations utilisateur
+	__fastcall TForm1(TComponent* Owner);
 	void __fastcall ajouterUtilisateur(AnsiString,AnsiString,AnsiString);
 	void __fastcall getListeUtilisateurs();
 	int __fastcall VerifIdentifiant(AnsiString);
 	int __fastcall VerifPassword(AnsiString);
 	int __fastcall VerifPassword2(AnsiString);
-	__fastcall TForm1(TComponent* Owner);
+
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm1 *Form1;
